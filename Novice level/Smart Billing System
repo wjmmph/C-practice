@@ -1,0 +1,36 @@
+#include <stdio.h>
+
+int main(){
+    int n;
+    float total = 0.00;
+    printf("Enter number of items you purchased: ");
+    scanf("%d", &n);
+    
+    for (int i=0; i=<n; i++){
+        float price_per_item;
+        printf("Enter price of item %d: ", i);
+        scanf("%f", &price_per_item);
+        total = total + price_per_item;
+        price_per_item=0;
+    }
+    printf("Total Bill: %f", total);
+    
+    if (total>=1000){
+        int disc = 10;
+    }
+    
+    else if (total>=500 && total <=){
+        disc = 5;
+    }
+    
+    else{ disc = 0;}
+    
+    printf("Available percent discount: %d", disc);
+    float total_disc, payable;
+    total_disc = disc*total/100;
+    payable = total - total_disc;
+    
+    printf("Payable Amount after discount: %.2f", payable);
+    
+    return 0;
+}
