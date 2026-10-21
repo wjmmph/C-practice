@@ -2,8 +2,8 @@
 
 int main(){
     int a = 10;
-    int *p = &a;
-
+    int *p;
+    p = &a;
     printf("Address: %p\n", p);
     printf("Value: %d", *p);
     return 0;
