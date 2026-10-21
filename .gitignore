@@ -2,3 +2,4 @@ Makefile.win
 Project1.dev
 .vs/
 .vscode/
+*.exe
